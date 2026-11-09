@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task1 Intern CodeAlpha</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--Header section-->
+<header>
+    <h1>My Gallery</h1>
+
+    <div class="filter-buttons">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="nature">Nature</button>
+        <button class="filter-btn" data-filter="cities">Cities</button>
+        <button class="filter-btn" data-filter="animals">Animals</button>
+    </div>
+</header>
+    <!--Category Gallery container-->
+    <main class="gallery-container">
+        <!--Nature category images (at least 4 images)-->
+        <div class="gallery-item" data-category="nature">
+            <img src="https://tse2.mm.bing.net/th/id/OIP.G37tgeQqSNt7v2oPfj9ltQHaE7?r=0&pid=Api&h=220&P=0" alt="nature view">
+            <div class="overlay"><span>Nature View</span></div>
+        </div>
+
+        <div class="gallery-item" data-category="nature">
+            <img src="https://tse3.mm.bing.net/th/id/OIP.nKc0BH_t6LAViz3N2SedfAHaE7?r=0&pid=Api&h=220&P=0" alt="Forest stream">
+            <div class="overlay"><span>Forest Stream</span></div>
+        </div>
+
+        <div class="gallery-item" data-category="nature">
+            <img src="https://tse2.mm.bing.net/th/id/OIP.IxGC6Q9CWRAHIakTf8Y1PAHaFj?r=0&pid=Api&h=220&P=0" alt="valley wood">
+            <div class="overlay"><span>Valley Wood</span></div> 
+        </div>
+
+        <div class="gallery-item" data-category="nature">
+            <img src="https://tse4.mm.bing.net/th/id/OIP.Mvcr0QDsGXOx29cSBfXd6AHaE7?r=0&pid=Api&h=220&P=0" alt="nature flowers">
+            <div class="overlay"><span>Nature Flowers</span></div>
+        </div>
+
+        <!--Cities category images (at least 4 images)-->
+        <div class="gallery-item" data-category="cities">
+            <img src="https://tse2.mm.bing.net/th/id/OIP.CDxhf5-BKJzjGRoJoS4Y2AHaFj?r=0&pid=Api&h=220&P=0" alt="uae burj khalifa">
+            <div class="overlay"><span>UAE Burj Khalifa</span></div>
+        </div>
+
+        <div class="gallery-item" data-category="cities">
+            <img src="https://tse4.mm.bing.net/th/id/OIP.4jKaA_HcxVpI750ZeGtdPAHaE6?r=0&pid=Api&h=220&P=0" alt="ridyah ksa">
+            <div class="overlay"><span>Ridyah KSA</span></div>
+        </div>
+
+        <div class="gallery-item" data-category="cities">
+            <img src="https://tse1.mm.bing.net/th/id/OIP.sE5o1gzaKWdXHXABZKCKhAHaE8?r=0&pid=Api&h=220&P=0" alt="canada toronto">
+            <div class="overlay"><span>Canada Toronto</span></div>
+        </div>
+
+        <div class="gallery-item" data-category="cities">
+            <img src="https://tse1.mm.bing.net/th/id/OIP.PhYdjZh_9Ys57zuN01azNAHaE5?r=0&pid=Api&h=220&P=0" alt="usa time square">
+            <div class="overlay"><span>USA Time Square</span></div>
+        </div>
+
+        <!--Animals category images (at least 4)-->
+
+        <div class="gallery-item" data-category="animals">
+            <img src="https://tse1.mm.bing.net/th/id/OIP.CogZlzst-l48bwhRvBlnRgHaFV?r=0&pid=Api&h=220&P=0" alt="wild animal">
+            <div class="overlay"><span>Wild Animal</span></div>
+        </div>
+
+        <div class="gallery-item" data-category="animals">
+            <img src="https://tse1.mm.bing.net/th/id/OIP.l5dPatv04S7koEU2SetbzAHaEo?r=0&pid=Api&h=220&P=0">
+            <div class="overlay"><span>Loin</span></div>
+        </div>
+
+        <div class="gallery-item" data-category="animals">
+            <img src="https://tse1.mm.bing.net/th/id/OIP.KNMW20W6PjMxDSWJbg2lMQHaE8?r=0&pid=Api&h=220&P=0" alt="cats">
+            <div class="overlay"><span>Cats</span></div>
+        </div>
+
+        <div class="gallery-item" data-category="animals">
+            <img src="https://tse2.mm.bing.net/th/id/OIP.yF4F0BSExxzZFg-sx6mCTAHaFI?r=0&pid=Api&h=220&P=0" alt="cat">
+            <div class="overlay"><span>Cats</span></div>
+        </div>
+
+    </main>
+
+    <!--Lightbox modal for full view-->
+    <div id="lightbox" class="lightbox">
+        <span id="close-btn">&times;</span>
+        <button id="prev-btn" class="nav-btn">&#10094;</button>
+        <img id="lightbox-img" src="" alt="Enlarged view">
+        <button id="next-btn" class="nav-btn">&#10095;</button>
+        <div id="lightbox-caption"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
